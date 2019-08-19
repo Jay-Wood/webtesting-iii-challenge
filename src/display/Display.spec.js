@@ -11,3 +11,11 @@ describe("<Display />", () => {
     });
     
 });
+
+describe("displays state", () => {
+    it("shows unlocked and open", () => {
+        const display = render(<Display locked={false} closed={false} />)
+        expect(display.getByText(/unlocked/i))
+        expect(display.getByText(/open/i))
+    });
+});

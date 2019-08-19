@@ -4,10 +4,18 @@ import  { render, fireEvent } from "@testing-library/react";
 import Dashboard from "./Dashboard";
 
 describe("<Dashboard />", () => {
-
     it("matches snapshot", () => {
         const tree = renderer.create(<Dashboard />);
         expect(tree.toJSON()).toMatchSnapshot(); 
     });
     
 });
+
+describe ("<Dashboard />", () => {
+    it("defaults to unlocked and open", () => {
+        
+
+    });
+    
+});
+
